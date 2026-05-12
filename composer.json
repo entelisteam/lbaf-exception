@@ -1,0 +1,26 @@
+{
+  "name": "entelisteam/lbaf-exception",
+  "description": "Exceptions from LBAF",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "ENTELISTEAM INC",
+      "email": "welcome@entelis.team",
+      "homepage": "https://entelis.team"
+    }
+  ],
+  "require": {
+    "php": "~8.2"
+  },
+  "require-dev": {
+    "rector/rector": "^2.3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "EntelisTeam\\Lbaf\\Exception\\": "src/",
+      "EntelisTeam\\Lbaf\\Exception\\Rector\\": "rector/"
+    }
+  },
+  "minimum-stability": "dev"
+}
