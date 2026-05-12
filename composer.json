@@ -22,5 +22,8 @@
       "EntelisTeam\\Lbaf\\Exception\\Rector\\": "rector/"
     }
   },
+  "extra": {
+    "lbaf-rector-migrations": "EntelisTeam\\Lbaf\\Exception\\Rector\\Migrations"
+  },
   "minimum-stability": "dev"
 }
