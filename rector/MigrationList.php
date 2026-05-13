@@ -4,12 +4,13 @@ declare(strict_types=1);
 
 namespace EntelisTeam\Lbaf\Exception\Rector;
 
-use EntelisTeam\Lbaf\Exception\Rector\Migration\M20260512_0930_ExceptionSplit;
+use EntelisTeam\Lbaf\Exception\Rector\Migration\Migration_20260512_0930_ExceptionSplit;
+use EntelisTeam\Lbaf\Rector\RectorMigrationListInterface;
 
 /**
  * Реестр Rector-миграций пакета entelisteam/php-dto-hydrator.
  */
-final class Migrations
+final class MigrationList implements RectorMigrationListInterface
 {
     /**
      * @return list<class-string>
@@ -17,7 +18,7 @@ final class Migrations
     public static function all(): array
     {
         return [
-            M20260512_0930_ExceptionSplit::class,
+            Migration_20260512_0930_ExceptionSplit::class,
         ];
     }
 }
